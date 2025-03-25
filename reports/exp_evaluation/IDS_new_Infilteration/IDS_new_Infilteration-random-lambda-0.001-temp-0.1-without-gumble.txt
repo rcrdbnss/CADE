@@ -1,7 +1,0 @@
-random perturbed distance (n = 100)  avg: 11.546, std: 3.169
-================================================================================
-random success from drifting to in-dist: 32, total_try: 924000,                      ratio: 0.00%
-
-
-
-==================================

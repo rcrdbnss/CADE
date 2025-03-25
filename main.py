@@ -9,14 +9,12 @@ set_random_seed(2)
 
 import sys
 import logging
-import traceback
 
 from timeit import default_timer as timer
 from pprint import pformat
 from collections import Counter
-from keras.models import load_model
 from keras import backend as K
-from keras.utils import np_utils
+
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"  # so the IDs match nvidia-smi
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 

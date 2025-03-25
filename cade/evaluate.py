@@ -17,12 +17,11 @@ set_random_seed(2)
 
 import sys
 import logging
-import copy
 import traceback
 import numpy as np
 import pickle
 
-from collections import Counter, OrderedDict
+from collections import OrderedDict
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, confusion_matrix
 from keras import backend as K

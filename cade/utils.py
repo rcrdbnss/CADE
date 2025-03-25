@@ -25,8 +25,6 @@ import traceback
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from tqdm import tqdm
-
 
 def parse_args():
     """Parse the command line configuration for a particular run.

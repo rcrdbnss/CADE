@@ -19,7 +19,6 @@ seed(1)
 from tensorflow import set_random_seed
 set_random_seed(2)
 
-import sys
 from functools import partial
 import traceback
 import logging
@@ -33,7 +32,7 @@ from sklearn.metrics import accuracy_score, pairwise_distances
 
 from keras import backend as K
 from keras.layers import Input, Dense, Dropout
-from keras.models import Model, Sequential, load_model
+from keras.models import Model, load_model
 
 import cade.utils as utils
 import cade.classifier as classifier

@@ -16,31 +16,19 @@ from tensorflow import set_random_seed
 set_random_seed(2)
 
 from keras import backend as K
-import tensorflow as tf
 
-import sys
-import json
-import warnings
 import logging
 import pickle
-from datetime import datetime
-import traceback
-import seaborn as sns
-
-from collections import Counter, OrderedDict
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
-from sklearn.cluster import KMeans
 from sklearn.ensemble import RandomForestClassifier
 
 from keras.layers import Input, Dense, Dropout
-from keras.models import Model, Sequential, model_from_json, load_model
-from keras.optimizers import SGD, Adam
-from keras.initializers import VarianceScaling
-from keras.engine.topology import Layer, InputSpec
-from keras.utils import np_utils, plot_model
-from keras.callbacks import EarlyStopping, ModelCheckpoint
+from keras.models import Model, load_model
+from keras.optimizers import Adam
+from keras.utils import np_utils
+from keras.callbacks import ModelCheckpoint
 
 import numpy as np
 import matplotlib.pyplot as plt

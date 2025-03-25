@@ -24,22 +24,17 @@ config.gpu_options.allow_growth = True
 # Only allow a total of half the GPU memory to be allocated
 config.gpu_options.per_process_gpu_memory_fraction = 0.5
 
-import sys
 import math
 import time
 import warnings
 
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 from sklearn.cluster import KMeans
-from sklearn.ensemble import RandomForestClassifier
 
 from keras import backend as K
 from keras.layers import Input, Dense
 from keras.models import Model
-from keras.optimizers import SGD, Adam
-from keras.utils import np_utils
-from keras.callbacks import EarlyStopping, ModelCheckpoint
+from keras.optimizers import Adam
+from keras.callbacks import ModelCheckpoint
 
 import numpy as np
 import logging

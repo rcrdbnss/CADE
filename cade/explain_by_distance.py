@@ -28,7 +28,6 @@ import re
 import numpy as np
 import tensorflow as tf
 
-from timeit import default_timer as timer
 from tqdm import tqdm
 from keras import backend as K
 

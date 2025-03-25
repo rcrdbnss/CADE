@@ -27,7 +27,6 @@ set_random_seed(2)
 
 import os, sys
 import numpy as np
-import statistics
 import traceback
 import logging
 from timeit import default_timer as timer

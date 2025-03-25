@@ -24,21 +24,12 @@ config.gpu_options.allow_growth = True
 # Only allow a total of half the GPU memory to be allocated
 config.gpu_options.per_process_gpu_memory_fraction = 0.5
 
-import sys
 import logging
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
 
-from timeit import default_timer as timer
-from collections import Counter
 from keras import backend as K
-from keras.models import load_model
 from tqdm import tqdm
 
-from sklearn.manifold import TSNE
-
-import cade.utils as utils
 from cade.autoencoder import Autoencoder
 
 

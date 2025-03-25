@@ -1,3 +1,5 @@
+*.sh
+
 # no need to upload
 logs/
 .DS_Store
